@@ -1,0 +1,630 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .below {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .box {
+            flex: 1 1 300px;
+            max-width: 300px;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f4f4f4;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .box img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+        }
+
+        .box h3 {
+            font-size: 16px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .box {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="below">
+        <div class="box">
+            <img src="./images/abo1.png" alt="Quality Collection">
+            <h3>Get the products from broader Collection with high quality.</h3>
+        </div>
+        <div class="box">
+            <img src="./images/abo2.png" alt="Trusted Manufacturers">
+            <h3>Buy your crackers from the trusted manufacturers.</h3>
+        </div>
+        <div class="box">
+            <img src="./images/abo3.png" alt="Right Price">
+            <h3>Purchase the products at a right price.</h3>
+        </div>
+        <div class="box">
+            <img src="./images/abo4.png" alt="New Arrivals">
+            <h3>Know the new arrival of crackers year on year.</h3>
+        </div>
+        <div class="box">
+            <img src="./images/abo5.png" alt="Combo Packs">
+            <h3>Select combo packs of Crackers.</h3>
+        </div>
+        <div class="box">
+            <img src="./images/abo6.png" alt="Sivakasi Price">
+            <h3>You can receive crackers at Sivakasi Price.</h3>
+        </div>
+    </div>
+
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            
+            background-image: url(../images/backne.jpg);
+background-position: center; 
+background-repeat: no-repeat;
+ background-size: cover; 
+height:700px; 
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: fadeIn 1s ease-in;
+        }
+
+
+
+        .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+/* Logo styling */
+.top img {
+    width: 100px;
+    height: 5px;
+    object-fit: contain;
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+/* Navigation styling */
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    padding: 25px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #f2a365; /* Change to your preferred hover color */
+}
+
+
+
+        /* Keyframes for Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0.9); opacity: 0; }
+            60% { transform: scale(1.05); opacity: 1; }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes scaleUp {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateY(30px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Container Styling */
+        .one {
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            text-align: center;
+            animation: bounceIn 1s ease-out forwards;
+        }
+
+        .imd img {
+            width: 70%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Titles and Text */
+        h2 {
+            color: #4CAF50;
+            font-size: 32px;
+            font-family: 'Georgia', serif;
+            margin-bottom: 5px;
+        }
+
+        h3 {
+            color: #333;
+            font-size: 24px;
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        h4 {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: justify;
+            margin-top: 10px;
+        }
+
+        /* Flexbox Image Section */
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            max-width: 1000px;
+            padding: 20px;
+        }
+
+        .image {
+            flex: 1 1 300px;
+            max-width: 300px;
+            padding: 10px;
+            transition: transform 0.3s ease;
+            animation: scaleUp 1s ease forwards;
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .image:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Features Section */
+        .below {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            animation: slideIn 1.2s ease forwards;
+        }
+
+        .box {
+            flex: 1 1 300px;
+            max-width: 300px;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f4f4f4;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .box img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+        }
+
+        .box h3 {
+            font-size: 16px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        .slideshow-container {
+width: 100%;
+overflow: hidden;
+position: relative;
+height: 300px;
+}
+
+/* Styling for the images */
+.slide {
+display: flex;
+animation: slide 12s infinite;
+}
+
+.slide img {
+width: 100%;
+max-width: 100%;
+height: 300px;
+flex-shrink: 0;
+transition: transform 0.5s ease;
+}
+
+/* Animation keyframes for sliding */
+@keyframes slide {
+0% { transform: translateX(0); }
+20% { transform: translateX(0); }
+25% { transform: translateX(-100%); }
+45% { transform: translateX(-100%); }
+50% { transform: translateX(-200%); }
+70% { transform: translateX(-200%); }
+75% { transform: translateX(-300%); }
+95% { transform: translateX(-300%); }
+100% { transform: translateX(0); }
+}
+
+
+.containerr {
+width: 100%;
+height: 300px;
+overflow: hidden;
+position: relative;
+}
+
+/* Image 1 animation (coming from the left) */
+.image1 {
+position: absolute;
+top: 50%;
+left: -100%;
+transform: translateY(-50%);
+animation: slideLeft 7s ease-in-out infinite alternate;
+}
+
+/* Image 2 animation (coming from the right) */
+.image2 {
+position: absolute;
+top: 50%;
+right: -100%;
+
+transform: translateY(-50%);
+animation: slideRight 7s ease-in-out infinite alternate;
+}
+
+/* Keyframes for sliding in from left */
+@keyframes slideLeft {
+0% { left: -100%; }
+50% { left: 50%; }
+100% { left: -100%; }
+}
+
+/* Keyframes for sliding in from right */
+@keyframes slideRight {
+0% { right: -100%; }
+50% { right: 50%; }
+100% { right: -100%; }
+}
+
+
+
+.bcone{
+    background-image: url(./images/backgroung1.jpg);
+background-position: left;
+background-repeat: no-repeat;
+background-size: cover;
+height:600px;
+   color:wheat;
+}
+
+.left{
+    width: 33%;
+    float: left;
+    padding: 30px;
+    height: 270px;
+    
+    
+
+}
+.center{
+    width:33% ;
+    float: left;
+    
+    padding: 30px;
+    
+    text-align: center;
+    height: 270px;
+}
+.right{
+    width: 20%;
+    float: left;
+    height: 270px;
+   
+
+}
+
+    
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+
+
+            body {
+            font-family: Arial, sans-serif;
+            
+            background-image: url(../images/backne.jpg);
+        background-position: center; 
+       background-repeat: no-repeat;
+    background-size: cover; 
+height:700px; }
+
+            .nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav ul li {
+        padding: 5px;
+    }
+
+    .top img {
+        width: 80px;
+        height: 80px;
+    }
+            .one {
+                text-align: left;
+            }
+            .flex, .below {
+                flex-direction: column;
+                align-items: center;
+            }
+            .image, .box {
+                max-width: 90%;
+            }
+
+            .bcone{
+    background-image: url(./images/backgroung1.jpg);
+background-position: left;
+background-repeat: no-repeat;
+background-size: cover;
+height:1000px;
+
+   color:wheat;
+}
+
+.left{
+    width: 33%;
+    float: left;
+    padding: 30px;
+    height: 270px;
+    
+    
+
+}
+.center{
+    width:33% ;
+    float: left;
+    
+    padding: 30px;
+    
+    text-align: center;
+    height: 270px;
+    color: #f9f9f9;
+}
+.right{
+    padding: 450px;
+    width: 20%;
+    float: left;
+    height: 270px;
+   
+
+}
+        }
+    
+
+       
+    </style>
+</head>
+<body>
+
+
+    <div class="header">
+        <!-- Logo Section -->
+        <div class="top">
+            <img src="./images/WhatsApp Image 2024-11-01 at 4.36.17 PM.jpeg" alt="Logo" width="200px" height="200px">
+        </div>
+        
+        <!-- Navigation Section -->
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="price.html">PRODUCTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="payment-details.html">PAYMENT DETAILS</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="res.html">REGISTER</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="headerr">
+        <center>
+            <h1 style="color: white;color: brown;font-size: 50px;font-style: italic;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">LIGHT BOOM</h1>
+        </center>
+    </div>
+    
+    
+    <div class="slideshow-container">
+        <div class="slide">
+          <img src="./images/cralmarq1.webp" alt="Image 1" height="800px">
+          <img src="./images/cramarqu2.webp" alt="Image 2">
+          <img src="./images/charmarg3.webp" alt="Image 3">
+          <img src="./images/cramarq4.webp" alt="Image 4">
+          <img src="./images/chamarq5.webp" alt="Image 5">
+          <img src="./images/cramar6.html" alt="Image 6">
+        </div>
+        </div>
+        <div class="leftright">
+    
+        </div>
+        <div class="containerr">
+            <img src="./images/left1.jpg" alt="Image 1" class="image1" width="500">
+            <img src="./images/right1.png" alt="Image 2" class="image2" width="500">
+          </div>
+    
+    
+    
+
+    <div class="one">
+        <div class="imd">
+            <img src="./images/aboy.jpg" alt="Indian Crackers" width="500px" height="300px">
+        </div>
+        <h2>Indian Crackers</h2>
+        <h3>Online Crackers Shop</h3>
+        <h4>Sivakasi Indian Crackers is one of the leading wholesale & retail crackers shops in Sivakasi. We offer high-quality products at low prices and introduce new varieties of kids' special fireworks every year. Our main motto is to supply quality products to our valuable customers. Make your colorful occasion with our quality crackers.
+            All varieties of fireworks are available for all ages, from flower pots to sky shots. Buy crackers from us with just a click on our website. Send your order enquiry and enjoy with friends and family with our best quality crackers at the lowest prices. GTJ Cracker is the best place to shop crackers online, offering a wide range of fancy fireworks, sparklers, atom bombs, rockets, chakkars, and cracker gift boxes. We provide direct sales at Sivakasi, located at Virudhunagar (D.T), with transportation available across India.</h4>
+    </div>
+
+    <div class="flex">
+        <div class="image">
+            <img src="./images/aboutimage1.jpg" alt="Crackers Image 1">
+        </div>
+        <div class="image">
+            <img src="./images/aboutimage2.jpg" alt="Crackers Image 2">
+        </div>
+    </div>
+
+    <div class="below">
+        <div class="box">
+            <img src="./images/abo1.png" alt="Quality Collection">
+            <h3>Get the products from a broader collection with high quality.</h3>
+        </div>
+        <div class="box">
+            <img src="./images/abo2.png" alt="Trusted Manufacturers">
+            <h3>Buy your crackers from trusted manufacturers.</h3>
+        </div>
+        <div class="box">
+            <img src="./images/abo3.png" alt="Right Price">
+            <h3>Purchase the products at the right price.</h3>
+        </div>
+        <div class="box">
+            <img src="./images/abo4.png" alt="New Arrivals">
+            <h3>Know the new arrival of crackers year on year.</h3>
+        </div>
+        <div class="box">
+            <img src="./images/abo5.png" alt="Combo Packs">
+            <h3>Select combo packs of Crackers.</h3>
+        </div>
+        <div class="box">
+            <img src="./images/abo6.png" alt="Sivakasi Price">
+            <h3>You can receive crackers at Sivakasi Price.</h3>
+        </div>
+    </div>
+
+
+
+   <div class="bcone">
+    <div class="left">
+        <h1 style="color: brown; font-size: 40px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Indian crackers</h1>
+        <h3 style="font-style: italic; font-size: 25px; ">" Indian crackers" is acknowledged as the renowned manufacturer of an exclusive range of Ground Chakkar, Flower Pots, Twinkling Star, Atom Bomb, Rockets etc.</h3>
+        <h3 style="font-style: italic;" >We offer the best quality products at best price.Make celebrations more memorable with superior quality of our crackers all over India.</h3>
+
+    </div>
+    <div class="center">
+            <h2 style="color: brown;font-size: 40px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Get In Touch</h2>
+            
+            <h3 style="color: wheat;">We're open for any suggestion or just to have a chat</h3><br><br>
+            <h2>📍 Address:</h2>
+            <h3 style="color: wheat;">No. 332/2, Ghanthi nagar, Batlagundu - 624 202, Tamil Nadu, India</h3><br><br>
+            <h2>📱 Phone Number:</h2>
+            <h3 style="color: wheat;">Mobile: +91 8667023585<br>Office: +91 7548869388</h3><br><br>
+            <h3>✉ Email Address:</h3>
+            <h4 style="color: wheat;">devi@gmail.com</h4>
+     </div> 
+    <div class="right"  > 
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31418.67915338776!2d77.72102835840852!3d10.153409507422733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b074f771aff2d09%3A0x3874813ffcc13a3!2sVattalagundu%2C%20Tamil%20Nadu%20624202!5e0!3m2!1sen!2sin!4v1730559685334!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   
+    </div>
+</div>
+
+</body>
+</html>

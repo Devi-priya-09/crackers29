@@ -1,0 +1,621 @@
+<!-- /* Colors */
+:root {
+  --yellow: #f5ba1a;
+  --black: #000000;
+  --grey: #cccccc;
+}
+
+/* Base Styles */
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  background: #f2f2f2;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+}
+
+/* Form Wrapper */
+.form_wrapper {
+  background: #fff;
+  width: 400px;
+  max-width: 100%;
+  padding: 25px;
+  margin: 8% auto 0;
+  border-top: 5px solid var(--yellow);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: scale3d(1, 1, 1);
+  animation: expand 0.8s 0.6s ease-out forwards;
+}
+
+.form_wrapper h2 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+/* Form Fields */
+.form_wrapper input[type="text"],
+.form_wrapper input[type="email"],
+.form_wrapper input[type="password"] {
+  width: 100%;
+  padding: 8px 10px 9px 35px;
+  height: 35px;
+  border: 1px solid var(--grey);
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+  background: #fafafa;
+}
+
+.form_wrapper input[type="submit"] {
+  background: var(--yellow);
+  height: 35px;
+  line-height: 35px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.form_wrapper input[type="submit"]:hover,
+.form_wrapper input[type="submit"]:focus {
+  background: #e5a913;
+}
+
+/* Checkbox & Radio Option Styling */
+.checkbox_option label::before,
+.radio_option label::before {
+  content: "";
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  margin-right: 0.5em;
+  vertical-align: -2px;
+  border: 2px solid var(--grey);
+  padding: 0.12em;
+  background-color: transparent;
+  transition: all 0.2s ease;
+}
+
+.checkbox_option input:checked + label::before,
+.radio_option input:checked + label::before {
+  background-color: var(--black);
+  border-color: var(--black);
+}
+
+/* Select Dropdown Styling */
+.select_option select {
+  display: inline-block;
+  width: 100%;
+  height: 35px;
+  padding: 0px 15px;
+  color: #7b7b7b;
+  border: 1px solid var(--grey);
+  background: #fff;
+  appearance: none;
+  transition: all 0.2s ease;
+}
+
+.select_arrow {
+  position: absolute;
+  top: calc(50% - 4px);
+  right: 15px;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  border-width: 8px 5px 0 5px;
+  border-style: solid;
+  border-color: #7b7b7b transparent transparent transparent;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .form_wrapper {
+    width: 90%;
+    padding: 15px;
+  }
+} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- original <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Form</title>
+  <style>
+    /* Colors */
+    :root {
+      --yellow: #f5ba1a;
+      --black: #000000;
+      --grey: #cccccc;
+    }
+
+    /* Base Styles */
+    body {
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 14px;
+      background: #f2f2f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+      visibility: hidden;
+      height: 0;
+    }
+
+    /* Form Wrapper */
+    .form_wrapper {
+      background: #fff;
+      width: 400px;
+      max-width: 100%;
+      padding: 25px;
+      margin: 8% auto 0;
+      border-top: 5px solid var(--yellow);
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: scale3d(1, 1, 1);
+      animation: expand 0.8s 0.6s ease-out forwards;
+    }
+
+    .form_wrapper h2 {
+      font-size: 1.5em;
+      line-height: 1.5em;
+      margin: 0;
+      text-align: center;
+      padding-bottom: 15px;
+    }
+
+    .form_wrapper .input_field {
+      position: relative;
+      margin-bottom: 20px;
+      animation: bounce 0.6s ease-out;
+    }
+
+    .form_wrapper input[type="text"],
+    .form_wrapper input[type="email"],
+    .form_wrapper input[type="password"] {
+      width: 100%;
+      padding: 8px 10px 9px 35px;
+      height: 35px;
+      border: 1px solid var(--grey);
+      transition: all 0.3s ease-in-out;
+      box-sizing: border-box;
+      background: #fafafa;
+    }
+
+    .form_wrapper input[type="submit"] {
+      background: var(--yellow);
+      height: 35px;
+      line-height: 35px;
+      width: 100%;
+      border: none;
+      cursor: pointer;
+      color: #fff;
+      font-size: 1.1em;
+      margin-bottom: 10px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .form_wrapper input[type="submit"]:hover,
+    .form_wrapper input[type="submit"]:focus {
+      background: #e5a913;
+    }
+
+    /* Checkbox & Radio Option Styling */
+    .checkbox_option label::before,
+    .radio_option label::before {
+      content: "";
+      display: inline-block;
+      width: 0.5em;
+      height: 0.5em;
+      margin-right: 0.5em;
+      vertical-align: -2px;
+      border: 2px solid var(--grey);
+      padding: 0.12em;
+      background-color: transparent;
+      transition: all 0.2s ease;
+    }
+
+    .checkbox_option input:checked + label::before,
+    .radio_option input:checked + label::before {
+      background-color: var(--black);
+      border-color: var(--black);
+    }
+
+    /* Select Dropdown Styling */
+    .select_option {
+      position: relative;
+      width: 100%;
+    }
+
+    .select_option select {
+      display: inline-block;
+      width: 100%;
+      height: 35px;
+      padding: 0px 15px;
+      color: #7b7b7b;
+      border: 1px solid var(--grey);
+      background: #fff;
+      appearance: none;
+      transition: all 0.2s ease;
+    }
+
+    .select_arrow {
+      position: absolute;
+      top: calc(50% - 4px);
+      right: 15px;
+      width: 0;
+      height: 0;
+      pointer-events: none;
+      border-width: 8px 5px 0 5px;
+      border-style: solid;
+      border-color: #7b7b7b transparent transparent transparent;
+    }
+
+    /* Animations */
+    @keyframes expand { 
+      0% { transform: scale3d(1, 0, 1); opacity: 0; }
+      25% { transform: scale3d(1, 1.2, 1); }
+      50% { transform: scale3d(1, 0.85, 1); }
+      75% { transform: scale3d(1, 1.05, 1); }
+      100% { transform: scale3d(1, 1, 1); opacity: 1; }
+    }
+
+    @keyframes bounce { 
+      0% { transform: translate3d(0, -25px, 0); opacity: 0; }
+      25% { transform: translate3d(0, 10px, 0); }
+      50% { transform: translate3d(0, -6px, 0); }
+      75% { transform: translate3d(0, 2px, 0); }
+      100% { transform: translate3d(0, 0, 0); opacity: 1; }
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 600px) {
+      .form_wrapper {
+        width: 90%;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="form_wrapper">
+  <h2>Registration Form</h2>
+  <form action="#">
+    <!-- Text Input -->
+    <!-- <div class="input_field">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name">
+    </div>
+    <div class="input_field">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email">
+    </div>
+    <div class="input_field">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password">
+    </div>
+
+    <!-- Checkbox Option -->
+    <!-- <div class="checkbox_option">
+      <input type="checkbox" id="agree">
+      <label for="agree">I agree to the Terms and Conditions</label>
+    </div> -->
+
+    <!-- Radio Option -->
+    <!-- <div class="radio_option">
+      <input type="radio" id="male" name="gender">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender">
+      <label for="female">Female</label>
+    </div>
+
+    Select Option
+    <div class="select_option">
+      <label for="country">Country</label>
+      <select id="country">
+        <option>United States</option>
+        <option>Canada</option>
+        <option>United Kingdom</option>
+      </select>
+      <div class="select_arrow"></div>
+    </div> -->
+
+    <!-- Submit Button -->
+    <!-- <input type="submit" value="Register">
+  </form>
+</div>
+
+</body>
+</html> --> --> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Form with Icons & Animations</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Colors */
+    :root {
+      --yellow: #bd3689;
+      --black: #000000;
+      --grey: #cccccc;
+    }
+
+    /* Base Styles */
+    body {
+      height: 100vh;
+            background-image: url(./images/fireworks3.jpg);
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: cover;
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 14px;
+      /* background: #f2f2f2; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    
+
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+      visibility: hidden;
+      height: 0;
+    }
+
+    /* Form Wrapper */
+    .form_wrapper {
+      background: #fff;
+      width: 400px;
+      max-width: 100%;
+      padding: 25px;
+      margin: 8% auto 0;
+      border-top: 5px solid var(--yellow);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      opacity: 0;
+      transform: translateY(-50px);
+      animation: slideIn 1s ease-out forwards;
+    }
+
+    .form_wrapper h2 {
+      font-size: 1.5em;
+      line-height: 1.5em;
+      margin: 0;
+      text-align: center;
+      padding-bottom: 15px;
+    }
+
+    .form_wrapper .input_field {
+      position: relative;
+      margin-bottom: 20px;
+      animation: fadeIn 0.6s ease-in-out forwards;
+    }
+
+    .form_wrapper .input_field i {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--grey);
+      font-size: 1.2em;
+    }
+
+    .form_wrapper input[type="text"],
+    .form_wrapper input[type="email"],
+    .form_wrapper input[type="password"] {
+      width: 100%;
+      padding: 8px 10px 9px 35px;
+      height: 35px;
+      border: 1px solid var(--grey);
+      transition: all 0.3s ease-in-out;
+      box-sizing: border-box;
+      border-radius: 5px;
+    }
+
+    .form_wrapper input[type="submit"] {
+      background: var(--yellow);
+      height: 35px;
+      line-height: 35px;
+      width: 100%;
+      border: none;
+      cursor: pointer;
+      color: #fff;
+      font-size: 1.1em;
+      margin-top: 20px;
+      transition: background 0.3s ease-in-out;
+      border-radius: 5px;
+      animation: fadeIn 0.6s 0.4s ease-in-out forwards;
+    }
+
+    .form_wrapper input[type="submit"]:hover,
+    .form_wrapper input[type="submit"]:focus {
+      background: #e5a913;
+    }
+
+    /* Checkbox & Radio Option Styling */
+    .checkbox_option label::before,
+    .radio_option label::before {
+      content: "";
+      display: inline-block;
+      width: 0.5em;
+      height: 0.5em;
+      margin-right: 0.5em;
+      vertical-align: -2px;
+      border: 2px solid var(--grey);
+      padding: 0.12em;
+      background-color: transparent;
+      transition: all 0.2s ease;
+    }
+
+    .checkbox_option input:checked + label::before,
+    .radio_option input:checked + label::before {
+      background-color: var(--black);
+      border-color: var(--black);
+    }
+
+    /* Select Dropdown Styling */
+    .select_option {
+      position: relative;
+      width: 100%;
+      margin-top:20px;
+
+    }
+
+    .select_option select {
+      display: inline-block;
+      width: 100%;
+      height: 35px;
+      padding: 0px 15px;
+      color: #7b7b7b;
+      border: 1px solid var(--grey);
+      background: #fff;
+      appearance: none;
+      transition: all 0.2s ease;
+      border-radius: 5px;
+    }
+
+    .select_arrow {
+      position: absolute;
+      top: calc(50% - 4px);
+      right: 15px;
+      width: 0;
+      height: 0;
+      pointer-events: none;
+      border-width: 8px 5px 0 5px;
+      border-style: solid;
+      border-color: #7b7b7b transparent transparent transparent;
+    }
+
+    /* Animations */
+    @keyframes slideIn { 
+      0% { transform: translateY(-50px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 600px) {
+      .form_wrapper {
+        width: 90%;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="form_wrapper">
+  <h2>Registration Form</h2>
+  <form action="#">
+    <!-- Name Input -->
+    <div class="input_field">
+      <i class="fas fa-user"></i>
+      <label for="name"></label>
+      <input type="text" id="name" placeholder="Enter your name">
+    </div>
+    
+    <!-- Email Input with Icon -->
+    <div class="input_field">
+      <i class="fas fa-envelope"></i>
+      <label for="email"></label>
+      <input type="email" id="email" placeholder="Enter your email">
+    </div>
+    
+    <!-- Password Input with Icon -->
+    <div class="input_field">
+      <i class="fas fa-lock"></i>
+      <label for="password"></label>
+      <input type="password" id="password" placeholder="Enter your password">
+    </div>
+
+    <!-- Checkbox Option -->
+    
+    <!-- Radio Option -->
+    <div class="radio_option">
+      <input type="radio" id="male" name="gender">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender">
+      <label for="female">Female</label>
+    </div>
+
+    <!-- Select Option -->
+    <div class="select_option">
+      <label for="country"></label>
+      <select id="country">
+        <option>United States</option>
+        <option>Canada</option>
+        <option>United Kingdom</option>
+      </select>
+      <div class="select_arrow"></div>
+    </div>
+
+    <div class="checkbox_option">
+        <input type="checkbox" id="agree">
+        <label for="agree">I agree to the Terms and Conditions</label>
+      </div>
+  
+
+    <!-- Submit Button -->
+    <input type="submit" value="Register">
+   
+    <a href="index.html" target="_blank"   ><input type="submit"  value="HOME" ></a>
+  </form>
+</div>
+
+</body>
+</html>

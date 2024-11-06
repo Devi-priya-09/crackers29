@@ -1,0 +1,571 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <style>
+      .nav{
+        width: 25%;
+        padding: 30px;
+        float: left;
+        
+      }
+      .nav ul{
+        background-color: black;
+        list-style: none;
+        
+      }
+      .nav ul li a{
+        text-decoration: none;
+        font-size: 50px;
+      }
+
+      .section table{
+        /* width: 50%; */
+        border:2px solid black;
+        margin-top: 40px;
+
+      }
+      .section table th  {
+        
+        width: 200px;
+        /* background-color: red; */
+         border: 2px solid black; 
+        padding: 20px;
+        /* text-align: center; */
+        border-collapse: collapse;
+        
+      }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="box">
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li><hr>
+                    <li><a href="about.html">ABOUT</a></li><hr>
+                    <li><a href="price.html">PRODUCTS</a></li><hr>
+                    <li><a href="contact.html">CONTACT</a></li><hr>
+                    <li><a href="payment details.html">PAYMENT DETAILS</a></li><hr>
+                </ul>
+            </div>
+            <div class="boxx">
+             <h1>PAYMENT DETAILS</h1>
+             <h2>Payments can be done using NEFT, RTGS, GPay  to the below details. Cash On Delivery not available. Once the order is made using Phone or Web or App, You will be getting the order details by Email/SMS. Once fund transfer is made using above methods send the detail using Whatsapp to below helpdesk number.</h2>
+             <h3 style="color: rgb(173, 172, 172);">For Helpdesk (Only Whatsapp): 8072533124</h3>
+            <div class="section">
+             <table>
+                <tr>
+                    <th>Account name:</th><th>cracker shop</th></tr>
+               <tr>     <th>Current Account number:</th><th>089010200017815</th></tr>
+               <tr>  <th>Bank name:</th><th>AXIS Bank Ltd</th></tr>
+                <tr>  <th>IFS Code:</th><th>UTIB0000089</th></tr>
+                    <tr>  <th>PAN Number</th><th>AAJFG9062H</th>
+                    
+                </tr>
+             </table>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Details</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .search {
+ width: 80%;
+max-width: 800px;
+margin: 20px auto;
+padding: 10px;
+background-color: black;
+text-align: center;
+}
+
+.search input {
+width: 90%;
+padding: 8px;
+font-size: 18px;
+border: 2px solid white;
+border-radius: 5px;
+color: black;
+text-align: center;
+}
+
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+        }
+
+        /* Sidebar Navigation */
+        .nav {
+            width: 100%;
+            max-width: 250px;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: white;
+        }
+
+        .nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav ul li {
+            margin: 10px 0;
+            animation: slideIn 0.6s ease forwards;
+        }
+
+        .nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav ul li a:hover {
+            background-color: #555;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        /* Content Box */
+        .boxx {
+            padding: 20px;
+            text-align: center;
+            color: #333;
+            max-width: 800px;
+            margin: 20px;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        .boxx h1 {
+            color: #4CAF50;
+            font-size: 36px;
+        }
+
+        .boxx h2 {
+            color: #777;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .boxx h3 {
+            font-size: 18px;
+            color: #888;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        /* Payment Table */
+        .section table {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            animation: fadeInUp 1s ease;
+        }
+
+        .section th, .section td {
+            padding: 15px;
+            text-align: left;
+            border: 2px solid #ddd;
+            color: #333;
+            font-size: 18px;
+        }
+
+        .section th {
+            background-color: #4CAF50;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .section td {
+            background-color: #f9f9f9;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+
+        .slideshow-container {
+width: 100%;
+overflow: hidden;
+position: relative;
+height: 300px;
+}
+
+/* Styling for the images */
+.slide {
+display: flex;
+animation: slide 12s infinite;
+}
+
+.slide img {
+width: 100%;
+max-width: 100%;
+height: 300px;
+flex-shrink: 0;
+transition: transform 0.5s ease;
+}
+
+/* Animation keyframes for sliding */
+@keyframes slide {
+0% { transform: translateX(0); }
+20% { transform: translateX(0); }
+25% { transform: translateX(-100%); }
+45% { transform: translateX(-100%); }
+50% { transform: translateX(-200%); }
+70% { transform: translateX(-200%); }
+75% { transform: translateX(-300%); }
+95% { transform: translateX(-300%); }
+100% { transform: translateX(0); }
+}
+
+
+.containerr {
+width: 100%;
+height: 300px;
+overflow: hidden;
+position: relative;
+}
+
+/* Image 1 animation (coming from the left) */
+.image1 {
+position: absolute;
+top: 50%;
+left: -100%;
+transform: translateY(-50%);
+animation: slideLeft 7s ease-in-out infinite alternate;
+}
+
+/* Image 2 animation (coming from the right) */
+.image2 {
+position: absolute;
+top: 50%;
+right: -100%;
+
+transform: translateY(-50%);
+animation: slideRight 7s ease-in-out infinite alternate;
+}
+
+/* Keyframes for sliding in from left */
+@keyframes slideLeft {
+0% { left: -100%; }
+50% { left: 50%; }
+100% { left: -100%; }
+}
+
+/* Keyframes for sliding in from right */
+@keyframes slideRight {
+0% { right: -100%; }
+50% { right: 50%; }
+100% { right: -100%; }
+}
+
+
+.bcone{
+    background-image: url(../images/backgroung1.jpg);
+background-position: left;
+background-repeat: no-repeat;
+background-size: cover;
+height:900px;
+   color: black;
+}
+
+.left{
+    /* width: 33%; */
+    float: left;
+    padding: 30px;
+    height: 270px;
+    
+
+}
+.center{
+    /* width:33% ; */
+    float: left;
+    
+    padding: 30px;
+    
+    text-align: center;
+}
+.right{
+    /* width: 33%; */
+    float: left;
+   
+
+}
+
+
+
+
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .nav {
+                max-width: 100%;
+            }
+            .section table {
+                max-width: 100%;
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav ul li a {
+                font-size: 10px;
+                padding: 8px;
+            }
+            .mar{
+                width: 500px;
+            } 
+
+            .boxx h1 {
+                font-size: 28px;
+            }
+
+            .boxx h2, .boxx h3 {
+                font-size: 16px;
+            }
+
+            .section table {
+                font-size: 14px;
+            }
+
+
+            .bcone{
+    /* background-image: url(../images/backgroung1.jpg); */
+    background-color: yellow;
+background-position: left;
+background-repeat: no-repeat;
+background-size: cover;
+height:1500px;
+   color: black;
+}
+
+.left{
+    /* width: 33%; */
+    float: left;
+    padding: 30px;
+    height: 270px;
+    
+
+}
+.center{
+    /* width:33% ; */
+    float: left;
+    
+    padding: 80px;
+    
+    text-align: center;
+}
+.right{
+    /* width: 33%; */
+    float: left;
+   
+
+}
+
+      
+       
+    
+    
+    /* Responsive adjustments */
+    
+    
+    
+    
+    
+   
+        }
+    </style>
+</head>
+<body>
+
+
+
+    
+     
+    <div class="header">
+        <center>
+            <h1 style="color:green; font-size: 60px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">CRACKERS SHOP</h1>
+        </center>
+    </div>
+
+    <div class="search">
+        <center>
+            <input type="text" id="searchInput" placeholder="Search for products">
+        </center>
+    </div>
+
+
+
+    <div class="mar">
+     <marquee direction="left">
+    <img src="./images/chamarq5.webp " height="400px">
+    <img src="./images/charmarg3.webp " height="400px">
+    <img src="./images/cralmarq1.webp " height="400px">
+    <img src="./images/cramarq4.webp " height="400px">
+</marquee>
+</div>
+    <div class="flex">
+        <!-- Navigation Sidebar -->
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li><hr>
+                <li><a href="about.html">ABOUT</a></li><hr>
+                <li><a href="price.html">PRODUCTS</a></li><hr>
+                <li><a href="contact.html">CONTACT</a></li><hr>
+                <li><a href="payment details.html">PAYMENT DETAILS</a></li><hr>
+                <li><a href="login.html">LOGIN</a></li><hr>
+                <li><a href="register.html">REGISTER</a></li><hr>
+            </ul>
+        </div>
+
+        <!-- Payment Details Section -->
+        <div class="boxx">
+            <h1>PAYMENT DETAILS</h1>
+            <h2>Payments💰 can be done using NEFT, RTGS, GPay to the below details. Cash On Delivery is not available. Once the order is made using Phone, Web, or App, you will receive the order details via Email/SMS. After fund transfer, send the details via WhatsApp to the helpdesk number below.</h2>
+            <h3>For Helpdesk (WhatsApp Only):📱 8667023585</h3>
+
+            <div class="section">
+                <table>
+                    <tr>
+                        <th>Account Name:</th>
+                        <td>Cracker Shop</td>
+                    </tr>
+                    <tr>
+                        <th>Current Account Number:</th>
+                        <td>089010200017815</td>
+                    </tr>
+                    <tr>
+                        <th>Bank Name:</th>
+                        <td>AXIS Bank Ltd</td>
+                    </tr>
+                    <tr>
+                        <th>IFS Code:</th>
+                        <td>UTIB0000089</td>
+                    </tr>
+                    <tr>
+                        <th>PAN Number:</th>
+                        <td>AAJFG9062H</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    
+    </div>
+    <div class="leftright">
+
+    </div>
+    <div class="containerr">
+        <img src="./images/left1.jpg" alt="Image 1" class="image1" width="500">
+        <img src="./images/right1.png" alt="Image 2" class="image2" width="500">
+      </div>
+
+
+
+
+      <!-- <div class="bcone">
+        <div class="left">
+            <h1 style="color: brown; font-size: 40px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Indian crackers</h1>
+            <h3 style="font-style: italic; font-size: 25px;color: wheat ">" Indian crackers" is acknowledged as the renowned manufacturer of an exclusive range of Ground Chakkar, Flower Pots, Twinkling Star, Atom Bomb, Rockets etc.</h3>
+            <h3 style="font-style: italic; color: wheat;" >We offer the best quality products at best price.Make celebrations more memorable with superior quality of our crackers all over India.</h3>
+    
+        </div>
+        <div class="center">
+                <h2 style="color: brown;font-size: 40px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Get In Touch</h2>
+                
+                <h3 style="color: yellow">We're open for any suggestion or just to have a chat</h3>
+                <h2>📍 Address:</h2>
+                <h3 style="color: yellow">No. 332/2, Ghanthi nagar, Batlagundu - 624 202, Tamil Nadu, India</h3>
+                <h2>📱 Phone Number:</h2>
+                <h3 style="color: yellow">Mobile: +91 8667023585<br>Office: +91 7548869388</h3>
+                <h3 style="color: yellow">devi@gmail.com</h4>
+         </div> 
+        <div class="right"  > 
+    
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31418.67915338776!2d77.72102835840852!3d10.153409507422733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b074f771aff2d09%3A0x3874813ffcc13a3!2sVattalagundu%2C%20Tamil%20Nadu%20624202!5e0!3m2!1sen!2sin!4v1730559685334!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       
+        </div>
+        </div>
+
+</body>
+</html> -->
+<div class="bcone">
+    <div class="left">
+        <h1 style="color: brown; font-size: 40px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Indian crackers</h1>
+        <h3 style="font-style: italic; font-size: 25px; ">" Indian crackers" is acknowledged as the renowned manufacturer of an exclusive range of Ground Chakkar, Flower Pots, Twinkling Star, Atom Bomb, Rockets etc.</h3>
+        <h3 style="font-style: italic;" >We offer the best quality products at best price.Make celebrations more memorable with superior quality of our crackers all over India.</h3>
+
+    </div>
+    <div class="center">
+            <h2 style="color: brown;font-size: 40px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Get In Touch</h2>
+            
+            <h3>We're open for any suggestion or just to have a chat</h3><br><br>
+            <h2>📍 Address:</h2>
+            <h3>No. 332/2, Ghanthi nagar, Batlagundu - 624 202, Tamil Nadu, India</h3><br><br>
+            <h2>📱 Phone Number:</h2>
+            <h3>Mobile: +91 8667023585<br>Office: +91 7548869388</h3><br><br>
+            <h3>✉ Email Address:</h3>
+            <h4>devi@gmail.com</h4>
+     </div> 
+    <div class="right"  > 
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31418.67915338776!2d77.72102835840852!3d10.153409507422733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b074f771aff2d09%3A0x3874813ffcc13a3!2sVattalagundu%2C%20Tamil%20Nadu%20624202!5e0!3m2!1sen!2sin!4v1730559685334!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   
+    </div>
+</div>
+</body>
+</html>

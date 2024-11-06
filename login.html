@@ -1,0 +1,1417 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Login Page</title>
+<style>
+    /* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Background Animation */
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #141e30;
+    background: linear-gradient(to right, #141e30, #243b55);
+    position: relative;
+}
+
+/* Container for Floating Circles */
+body::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent 80%);
+    animation: rotateBg 20s linear infinite;
+}
+
+@keyframes rotateBg {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Login Box Styling */
+.container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-box::before, .login-box::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+    z-index: -1;
+    animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
+    0% { transform: translateX(-150%) rotate(45deg); }
+    100% { transform: translateX(150%) rotate(45deg); }
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* Input Box Styling */
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    outline: none;
+    transition: 0.2s;
+}
+
+.input-box label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    pointer-events: none;
+    transition: 0.2s;
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label {
+    top: -20px;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #4CAF50;
+    border: none;
+    font-size: 16px;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+.signup-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.signup-text a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.signup-text a:hover {
+    color: #45a049;
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <button type="submit">Log In</button>
+                <p class="signup-text">Don't have an account? <a href="#">Sign up</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fireworks Login Page</title>
+    <style>
+        /* Reset Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Fireworks Animation Background */
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #141414;
+    position: relative;
+}
+
+/* Firework Stars */
+body::before, body::after {
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    top: -20%;
+    left: -20%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent 70%);
+    border-radius: 50%;
+    animation: fireworks 4s ease-in-out infinite alternate;
+}
+
+@keyframes fireworks {
+    0%, 100% { transform: scale(0); }
+    50% { transform: scale(1.2); }
+}
+
+/* Firework Sparks */
+body::after {
+    animation-delay: 2s;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent 80%);
+}
+
+/* Login Box Styling */
+.container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-box::before, .login-box::after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    border-radius: inherit;
+    top: -50%;
+    left: -50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+    animation: glow 6s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    0%, 100% { opacity: 0.5; transform: rotate(0deg); }
+    50% { opacity: 1; transform: rotate(180deg); }
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Input Field Styling */
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-box label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label {
+    top: -20px;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+/* Glow Effect on Input */
+.input-box input:focus {
+    border-bottom: 2px solid #ffcc00;
+    box-shadow: 0 0 8px #ffcc00;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #ff5722;
+    border: none;
+    font-size: 16px;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background: #ff8a50;
+    box-shadow: 0 0 15px #ff8a50;
+}
+
+.signup-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.signup-text a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.signup-text a:hover {
+    color: #ff5722;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h2>Welcome</h2>
+            <form>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <button type="submit">Login</button>
+                <p class="signup-text">New here? <a href="#">Sign up</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cracker Login Page</title>
+    <style>
+        /* Basic Reset */
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Animated Spark Background */
+        body {
+            height: 100vh;
+            background: linear-gradient(to bottom right, #141e30, #243b55);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            color: #fff;
+        }
+
+        /* Fireworks-like Sparks */
+        body::before {
+            content: "";
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent 50%);
+            animation: sparkle 4s infinite linear alternate;
+            opacity: 0.5;
+            top: -50%;
+            left: -50%;
+            pointer-events: none;
+        }
+
+        @keyframes sparkle {
+            0% { transform: scale(0); }
+            50% { transform: scale(1.2) rotate(90deg); }
+            100% { transform: scale(0); }
+        }
+
+        /* Container for Login */
+        .login-container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            width: 350px;
+        }
+
+        /* Title and Quote */
+        h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        .quote {
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        /* Input Styling */
+        .input-box {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            color: #fff;
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid #fff;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .input-box label {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.6);
+            pointer-events: none;
+            transition: 0.3s;
+        }
+
+        .input-box input:focus + label,
+        .input-box input:valid + label {
+            top: -20px;
+            font-size: 12px;
+            color: #ffdd57;
+        }
+
+        /* Button Styling */
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #ff5722;
+            border: none;
+            font-size: 16px;
+            color: #ffffff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+
+        button:hover {
+            background: #ff8a50;
+            box-shadow: 0 0 15px #ffdd57;
+        }
+
+        /* Footer Text */
+        .footer-text {
+            margin-top: 20px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .footer-text a {
+            color: #ffdd57;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-text a:hover {
+            color: #ff5722;
+        }
+
+
+
+        .text{
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.btn{
+    width: 100%;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.btn i{
+    font-size: 25px;
+    margin-right: 9px;
+}
+
+.twitter-btn{
+    margin: 15px 0;
+}
+
+.twitter-btn button{
+    background-color: rgb(0, 183, 255);
+    justify-content: center;
+}
+
+.twitter-btn button:hover{
+    background-color: rgb(104, 183, 214);
+}
+
+.facebook-btn{
+    margin-bottom: 25px;
+}
+
+.facebook-btn button{
+    background-color: rgba(10, 17, 72, .789);
+    justify-content: center;
+}
+
+.facebook-btn button:hover{
+    background-color: rgba(32, 41, 110, .789);
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Welcome Back!</h2>
+        <p class="quote">"Keep the spark alive and light up the world!"</p>
+
+        <form>
+            <div class="input-box">
+                <input type="text" required>
+                <label>Username</label>
+            </div>
+            <div class="input-box">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <button type="submit">Login</button>
+            <p class="footer-text">Need an account? <a href="#">Sign up now</a></p>
+        </form>
+    </div>
+
+    <div class="text">
+        or connect with Social Media
+    </div>
+
+    <div class="twitter-btn">
+        <button class="btn"><i class='bx bxl-twitter' ></i>
+            Sign in with Twitter</button>
+    </div>
+
+    <div class="facebook-btn">
+        <button class="btn"><i class='bx bxl-facebook'></i>
+            Sign in with Facebook</button>
+    </div>
+</div>
+
+
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cracker Login Page</title>
+    <style>
+        /* Basic Reset */
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Animated Spark Background */
+        body {
+            height: 100vh;
+            background: linear-gradient(to bottom right, #141e30, #243b55);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            color: #fff;
+        }
+
+        /* Fireworks-like Sparks */
+        body::before {
+            content: "";
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent 50%);
+            animation: sparkle 4s infinite linear alternate;
+            opacity: 0.5;
+            top: -50%;
+            left: -50%;
+            pointer-events: none;
+        }
+
+        @keyframes sparkle {
+            0% { transform: scale(0); }
+            50% { transform: scale(1.2) rotate(90deg); }
+            100% { transform: scale(0); }
+        }
+
+        /* Container for Login */
+        .login-container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            width: 350px;
+        }
+
+        /* Title and Quote */
+        h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        .quote {
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        /* Input Styling */
+        .input-box {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            color: #fff;
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid #fff;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .input-box label {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.6);
+            pointer-events: none;
+            transition: 0.3s;
+        }
+
+        .input-box input:focus + label,
+        .input-box input:valid + label {
+            top: -20px;
+            font-size: 12px;
+            color: #ffdd57;
+        }
+
+        /* Button Styling */
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #ff5722;
+            border: none;
+            font-size: 16px;
+            color: #ffffff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+
+        button:hover {
+            background: #ff8a50;
+            box-shadow: 0 0 15px #ffdd57;
+        }
+
+        /* Footer Text */
+        .footer-text {
+            margin-top: 20px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .footer-text a {
+            color: #ffdd57;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-text a:hover {
+            color: #ff5722;
+        }
+
+        /* Social Media Section */
+        .social-text {
+            font-size: 13px;
+            text-align: center;
+            margin: 20px 0 10px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .btn i {
+            font-size: 20px;
+            margin-right: 8px;
+        }
+
+        .twitter-btn {
+            background-color: rgb(0, 183, 255);
+        }
+
+        .twitter-btn:hover {
+            background-color: rgb(104, 183, 214);
+        }
+
+        .facebook-btn {
+            background-color: rgba(10, 17, 72, 0.789);
+        }
+
+        .facebook-btn:hover {
+            background-color: rgba(32, 41, 110, 0.789);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Welcome Back!</h2>
+        <p class="quote">"Keep the spark alive and light up the world!"</p>
+
+        <form>
+            <div class="input-box">
+                <input type="text" required>
+                <label>Username</label>
+            </div>
+            <div class="input-box">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <button type="submit">Login</button>
+            <p class="footer-text">Need an account? <a href="#">Sign up now</a></p>
+        </form>
+
+        <p class="social-text">or connect with Social Media</p>
+
+        <button class="btn twitter-btn">
+            <i class="bx bxl-twitter"></i> Sign in with Twitter
+        </button>
+        <button class="btn facebook-btn">
+            <i class="bx bxl-facebook"></i> Sign in with Facebook
+        </button>
+    </div>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- orginal<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cracker Login Page</title>
+    <style>
+        /* Basic Reset */
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Animated Spark Background */
+        body {
+            height: 100vh;
+            background: linear-gradient(to bottom right, #141e30, #243b55);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            color: #fff;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Fireworks-like Sparks */
+        body::before {
+            content: "";
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent 50%);
+            animation: sparkle 4s infinite linear alternate;
+            opacity: 0.5;
+            top: -50%;
+            left: -50%;
+            pointer-events: none;
+        }
+
+        @keyframes sparkle {
+            0% { transform: scale(0); }
+            50% { transform: scale(1.2) rotate(90deg); }
+            100% { transform: scale(0); }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Container for Login */
+        .login-container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            width: 350px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideIn 1.5s ease-out forwards;
+            animation-delay: 0.5s;
+        }
+
+        /* Slide-In Animation */
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Title and Quote */
+        h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        .quote {
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 30px;
+            font-style: italic;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: slideIn 1s ease-out forwards;
+            animation-delay: 1s;
+        }
+
+        /* Input Styling */
+        .input-box {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            color: #fff;
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid #fff;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .input-box label {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.6);
+            pointer-events: none;
+            transition: 0.3s;
+        }
+
+        .input-box input:focus + label,
+        .input-box input:valid + label {
+            top: -20px;
+            font-size: 12px;
+            color: #ffdd57;
+        }
+
+        /* Button Styling */
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #ff5722;
+            border: none;
+            font-size: 16px;
+            color: #ffffff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+
+        button:hover {
+            background: #ff8a50;
+            box-shadow: 0 0 15px #ffdd57;
+        }
+
+        /* Footer Text */
+        .footer-text {
+            margin-top: 20px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .footer-text a {
+            color: #ffdd57;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-text a:hover {
+            color: #ff5722;
+        }
+
+        /* Social Media Section */
+        .social-text {
+            font-size: 13px;
+            text-align: center;
+            margin: 20px 0 10px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideIn 1.5s ease-out forwards;
+        }
+
+        .btn i {
+            font-size: 20px;
+            margin-right: 8px;
+        }
+
+        /* Delay for Social Buttons */
+        .twitter-btn { 
+            background-color: rgb(0, 183, 255);
+            animation-delay: 1.3s;
+        }
+
+        .twitter-btn:hover {
+            background-color: rgb(104, 183, 214);
+        }
+
+        .facebook-btn {
+            background-color: rgba(10, 17, 72, 0.789);
+            animation-delay: 1.6s;
+        }
+
+        .facebook-btn:hover {
+            background-color: rgba(32, 41, 110, 0.789);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Welcome Back!</h2>
+        <p class="quote">"Keep the spark alive and light up the world!"</p>
+
+        <form>
+            <div class="input-box">
+                <input type="text" required>
+                <label>Username</label>
+            </div>
+            <div class="input-box">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <button type="submit">Login</button>
+            <p class="footer-text">Need an account? <a href="#">Sign up now</a></p>
+        </form>
+
+        <p class="social-text">or connect with Social Media</p>
+
+        <button class="btn twitter-btn">
+            <i class="bx bxl-twitter"></i> Sign in with Twitter
+        </button>
+        <button class="btn facebook-btn">
+            <i class="bx bxl-facebook"></i> Sign in with Facebook
+        </button>
+    </div>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cracker Login Page</title>
+    <style>
+        /* Basic Reset */
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Animated Spark Background */
+        body {
+            height: 100vh;
+            background-image: url(./images/firework1.jpg);
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: cover;
+/* height:300px; */
+            /* background: linear-gradient(to bottom right, #141e30, #243b55); */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            color: #fff;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Fireworks-like Sparkle Animation */
+        body::before {
+            content: "";
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent 50%);
+            animation: sparkle 4s infinite linear alternate;
+            opacity: 0.5;
+            top: -50%;
+            left: -50%;
+            pointer-events: none;
+        }
+
+        @keyframes sparkle {
+            0% { transform: scale(0); }
+            50% { transform: scale(1.5) rotate(45deg); }
+            100% { transform: scale(0); }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Container for Login */
+        .login-container {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 40px 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            width: 350px;
+            animation: bounceIn 1.2s ease-out forwards;
+        }
+
+        /* Bounce In Animation */
+        @keyframes bounceIn {
+            0% { transform: scale(0.6); opacity: 0; }
+            60% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1); }
+        }
+
+        /* Title and Quote */
+        h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        .quote {
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 30px;
+            font-style: italic;
+            animation: fadeInUp 1.5s ease-out forwards;
+        }
+
+        /* Fade-In Up Animation */
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Input Styling */
+        .input-box {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            color: #fff;
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid #fff;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .input-box label {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.6);
+            pointer-events: none;
+            transition: 0.3s;
+        }
+
+        .input-box input:focus + label,
+        .input-box input:valid + label {
+            top: -20px;
+            font-size: 12px;
+            color: #ffdd57;
+        }
+
+        /* Button Styling */
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #ff5722;
+            border: none;
+            font-size: 16px;
+            color: #ffffff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+
+        button:hover {
+            background: #ff8a50;
+            box-shadow: 0 0 15px #ffdd57;
+        }
+
+        /* Footer Text */
+        .footer-text {
+            margin-top: 20px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .footer-text a {
+            color: #ffdd57;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-text a:hover {
+            color: #ff5722;
+        }
+
+        /* Social Media Section */
+        .social-text {
+            font-size: 13px;
+            text-align: center;
+            margin: 20px 0 10px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        .btn i {
+            font-size: 20px;
+            margin-right: 8px;
+        }
+
+        /* Glowing Animation */
+        @keyframes glow {
+            0% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); }
+            100% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); }
+        }
+
+        /* Social Button Styles */
+        .twitter-btn { background-color: rgb(0, 183, 255); }
+        .facebook-btn { background-color: rgba(10, 17, 72, 0.789); }
+
+        .twitter-btn:hover { background-color: rgb(104, 183, 214); }
+        .facebook-btn:hover { background-color: rgba(32, 41, 110, 0.789); }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .login-container {
+                width: 90%;
+                padding: 30px 20px;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            .quote {
+                font-size: 0.8em;
+            }
+
+            .input-box input {
+                padding: 8px;
+                font-size: 14px;
+            }
+
+            button {
+                padding: 8px;
+                font-size: 14px;
+            }
+
+            .social-text, .footer-text {
+                font-size: 12px;
+            }
+
+            .btn {
+                padding: 8px 15px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Welcome Back!</h2>
+        <p class="quote">"Keep the spark alive and light up the world!"</p>
+
+        <form>
+            <div class="input-box">
+                <input type="text" required>
+                <label>Username</label>
+            </div>
+            <div class="input-box">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <button type="submit">Login</button>
+            <p class="footer-text">Need an account? <a href="res.html">Sign up now</a></p>
+        </form>
+
+        <p class="social-text">or connect with Social Media</p>
+
+        <button class="btn twitter-btn">
+            <i class="bx bxl-twitter"></i> Sign in with Twitter
+        </button>
+        <button class="btn facebook-btn">
+            <i class="bx bxl-facebook"></i> Sign in with Facebook
+        </button>
+    </div>
+
+</body>
+</html>
